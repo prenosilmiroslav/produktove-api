@@ -1,7 +1,11 @@
 parameters:
+    auth:
+        secretToken: f40e47e0f01278d10af5ad598223138bf7ef2be3
 
+    product:
+        limit: 10   # Limit záznamů na stránku
 
 database:
-	dsn: 'sqlite::memory:'
-	user:
-	password:
+	dsn: 'pgsql:host=db-container;port=5432;dbname=postgres;'
+	user: postgres
+	password: passwdApi

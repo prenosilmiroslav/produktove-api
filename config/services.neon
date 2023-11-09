@@ -1,6 +1,9 @@
 services:
 	- App\Router\RouterFactory::createRouter
 
+	- App\ApiV1Module\Model\AuthModel(%auth%)
+	- App\ApiV1Module\Model\ProductModel(@Nette\Database\Explorer, %product%)
+
 
 search:
 	-	in: %appDir%

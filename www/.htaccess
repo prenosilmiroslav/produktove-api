@@ -19,6 +19,9 @@ Require all granted
 	# RewriteCond %{HTTPS} !on
 	# RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+	RewriteCond %{REQUEST_METHOD} ^PUT$
+    RewriteRule ^(.*)$ index.php [L]
+
 	# Prevent access to files that start with a dot (like .htaccess or .git)
 	# Exception made for ".well-known" directory used for domain verification and other protocols
 	RewriteCond %{REQUEST_FILENAME} -f
