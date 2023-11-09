@@ -4,7 +4,7 @@ CREATE SEQUENCE product_id_seq1 INCREMENT 1 MINVALUE 1 MAXVALUE 2147483647 CACHE
 
 CREATE TABLE "product" (
     "id" integer DEFAULT nextval('product_id_seq1') NOT NULL,
-    "name" varying(100) NOT NULL,
+    "name" character varying(100) NOT NULL,
     "price" numeric(10,2) NOT NULL,
     "created_at" timestamp NOT NULL,
     "updated_at" timestamp,
