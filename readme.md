@@ -75,7 +75,3 @@ Filtrace záznamů a stránkování
 
 Filtraci a stránkování jsem popsal v sekci **Adresy API k testování** kdy tedy stačí přidat GET parametr (lze je i kombinovat).
 
-Testy
------------
-
-Z důvodu časové tísně jsem testy neimplementoval. Nicméně bych použil klasický nette tester spolu s knihovnou GuzzleHttp (https://packagist.org/packages/guzzlehttp/guzzle) a testoval bych kód na úrovni API, kdy se dá otestovat například při vložení nového produktu vrátí očekávaný JSON v konkrétním formátu.
